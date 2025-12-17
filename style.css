@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(160deg, #06141B, #11212D);
+  padding: 20px;
+  color: #CCD0CF;
+}
+
+h1 {
+  text-align: center;
+  color: #CCD0CF;
+}
+
+.sub {
+  text-align: center;
+  color: #9BA8AB;
+  margin-bottom: 30px;
+}
+
+#malla {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* Columnas por semestre */
+.semestre {
+  background: #11212D;
+  border-radius: 20px;
+  padding: 16px;
+  min-width: 260px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.semestre h2 {
+  text-align: center;
+  color: #CCD0CF;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Ramos */
+.ramo {
+  background: #253745;
+  border-radius: 14px;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.25s;
+  color: #CCD0CF;
+}
+
+.ramo:hover {
+  transform: scale(1.03);
+  background: #2f4556;
+}
+
+/* Aprobado */
+.ramo.aprobado {
+  background: #CCD0CF;
+  color: #06141B;
+  text-decoration: line-through;
+}
+
+/* Bloqueado */
+.ramo.bloqueado {
+  background: #4A5C6A;
+  color: #9BA8AB;
+  cursor: not-allowed;
+}
